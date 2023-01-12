@@ -1,0 +1,102 @@
+/* navbar */
+.nav-container{
+  display: flex;
+  height: 30px;
+  background-color: #562EFF;
+  justify-content: space-between;
+  padding: 20px 17%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.logo img{
+  height: 50px;
+}
+.logo-title{
+  padding-left: 10px;
+}
+.logo, .players, .nav-menu ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.nav-menu ul li a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.3em;
+  padding: 15px;
+  margin: 0 5px 0 5px;
+}
+.nav-menu ul li:hover{
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+  border: 2px solid gray;
+  border-radius: 5px;
+  box-shadow: 1px 2px 3px;
+}
+/* Top playes section */
+main, footer{
+  max-width: 1280px;
+  margin: 50px auto 50px auto;
+  box-shadow: 1px 1px 9px 5px;
+  border-radius: 10px;
+}
+.players-container, .footer-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+}
+.titles{
+  color: #562EFF;
+  padding: 25px;
+}
+.players img{
+  height: 56px;
+  width: 56px;
+  margin: 20px;
+}
+/* blog styles */
+.blog-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.blog-item{
+  display: flex;
+  margin: 20px;
+}
+.blog-item img{
+  height: 117px;
+  width: 177px;
+}
+.inner-title{
+  padding-left: 10px;
+}
+/* Footer */
+.footer-container img{
+  height: 104px;
+  width: 224px;
+}
+.card{
+  padding-left: 30px;
+  box-shadow: 1px 2px 10px 5px;
+  margin: 20px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+@media only screen and (max-width:688px) {
+  .nav-container{
+    padding: 0;
+    font-size: small;
+  }
+  .players-container, .blog-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
